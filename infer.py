@@ -11,13 +11,13 @@ import cv2
 
 from config import nju_path,nlpr_path,des_path,lfsd_path,ssd_path,sip_path,stere_path
 from misc import check_mkdir, AvgMeter, cal_precision_recall_mae, cal_fmeasure,cal_fmeasure1
-# from model_A_levelcon import R3Net
-# from model_B_lastlayer_trainweight import R3Net
-# from model_C_eachlayer_trainweight import R3Net
-# from model_I_backbone import R3Net
-# from model_II_rgbfuse_baseline import R3Net
-# from model_III_rgbfuse_backbone_toplayerdepth import R3Net
-from model_resnet18_d2fnet import R3Net
+# from model.model_A_levelcon import R3Net
+# from model.model_B_lastlayer_trainweight import R3Net
+# from model.model_C_eachlayer_trainweight import R3Net
+# from model.model_I_backbone import R3Net
+# from model.model_II_rgbfuse_baseline import R3Net
+# from model.model_III_rgbfuse_backbone_toplayerdepth import R3Net
+from model.model_resnet18_d2fnet import R3Net
 
 from collections import OrderedDict
 torch.manual_seed(2018)

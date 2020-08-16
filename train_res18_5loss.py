@@ -12,9 +12,9 @@ import joint_transforms
 from config import dutsk_path
 from datasets import ImageFolder
 from misc import AvgMeter, check_mkdir
-# from model_A_levelcon import R3Net
-# from model_I_backbone import R3Net
-from model_II_rgbfuse_baseline import R3Net
+# from model.model_A_levelcon import R3Net
+# from model.model_I_backbone import R3Net
+from model.model_II_rgbfuse_baseline import R3Net
 
 cudnn.benchmark = True
 
@@ -31,7 +31,7 @@ exp_name = 'rslt_II_rgbfuse_baseline'
 args = {
     'status': 'train',
     'iter_num': 30000,
-    'train_batch_size': 1,
+    'train_batch_size': 14,
     'last_iter': 0,
     'lr': 1e-3,
     'lr_decay': 0.1,

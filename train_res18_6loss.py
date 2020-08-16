@@ -12,10 +12,10 @@ import joint_transforms
 from config import dutsk_path
 from datasets import ImageFolder
 from misc import AvgMeter, check_mkdir
-# from model_B_lastlayer_trainweight import R3Net
-# from model_C_eachlayer_trainweight import R3Net
-# from model_III_rgbfuse_backbone_toplayerdepth import R3Net
-from model_resnet18_d2fnet import R3Net
+# from model.model_B_lastlayer_trainweight import R3Net
+# from model.model_C_eachlayer_trainweight import R3Net
+# from model.model_III_rgbfuse_backbone_toplayerdepth import R3Net
+from model.model_resnet18_d2fnet import R3Net
 
 cudnn.benchmark = True
 
@@ -32,7 +32,7 @@ exp_name = 'rslt_resnet18_d2fnet'
 args = {
     'status': 'train',
     'iter_num': 30000,
-    'train_batch_size': 1,
+    'train_batch_size': 14,
     'last_iter': 0,
     'lr': 1e-3,
     'lr_decay': 0.1,

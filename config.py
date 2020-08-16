@@ -5,7 +5,7 @@ datasets_root = './data/'
 test_root = './data/'
 # For each dataset, I put images and masks together
 #msrab_path = os.path.join(datasets_root, 'MSRA-B/img')
-# dutsk_path = os.path.join(datasets_root, '_NLPR/_NJU2000/')
+dutsk_path = os.path.join(datasets_root, '_NLPR/_NJU2000/')
 # dutsk_path = os.path.join(datasets_root, 'RGBD/')
 #msra10k_path = os.path.join(datasets_root, 'MSRA-10k/Imgs')
 #ecssd_path = os.path.join(datasets_root, 'ECSSD/img')

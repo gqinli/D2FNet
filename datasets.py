@@ -16,6 +16,8 @@ def make_dataset(root,status):
     # 获得NLPR和NJU2000的根目录
     NLPR_root = root.split('_')[0] + root.split('_')[1]
     nju2000_root = root.split('_')[0] + root.split('_')[2]
+    # NLPR_root = root.split('_')[0] + 'NLPR/'
+    # nju2000_root = root.split('_')[0] + 'NJU2000/'
     nlpr_img = NLPR_root + 'RGB/'
     nlpr_trth = NLPR_root + 'groundtruth/'
     nlpr_depth = NLPR_root + 'hha/'
